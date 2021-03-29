@@ -1,0 +1,481 @@
+@font-face {
+     font-family: A_little_sunshine;
+     src: url('A_little_sunshine.ttf');
+}
+html, body {
+		margin: 0px;
+		font-family: Arial;
+		font-size: 12px;
+		height: 100%;
+}
+/*estilo portfolio*/
+#corpoo {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/*overflow: hidden;*/
+}
+#corpoo #logo {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -32px;
+}
+#corpoo #fundo_port {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 100%;
+	opacity: 0.8;
+}
+#container {
+	position: absolute;
+	width: 80%;
+	min-height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0,0,0,0.6);
+}
+#container .botaorestrito {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 100px;
+	background-color: rgba(255,255,255,0.8);
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 0px 0px 0px 10px;
+	padding: 2px;
+}
+#container .botaorestrito a {
+	text-decoration: none;
+	color: #000000;
+}
+#container .botaorestrito a:hover {
+	text-decoration: underline;
+}
+#corpoo .p {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: A_little_sunshine, Arial;
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+}
+#corpoo #titulo {
+	margin-top: 100px;
+	font-size: 50px;
+}
+#corpoo #subtitulo {
+	margin-top: -55px;
+	font-size: 40px;
+}
+#corpoo .descricao {
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+}
+#corpoo #foto {
+	position: relative;
+	left: 50%;
+	margin-left: -60px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+#corpoo #social_container {
+	position: relative;
+	text-align: center;
+}
+#corpoo #social_container #social {
+	position: relative;
+	display: inline-block;
+}
+#corpoo #social_container #social div {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 2px;
+}
+#corpoo #social_container #social #facebook img {
+	margin-left: 3px;
+}
+#corpoo #social_container #social #instagram img {
+	margin-left: -74px;
+}
+#corpoo #social_container #social #linkedin img {
+	margin-left: -151px;
+}
+#corpoo #social_container #social #whatsapp img {
+	margin-left: -266px;
+}
+hr {
+	width: 50%;
+}
+#corpoo #menu_container {
+	position: relative;
+	text-align: center;
+}
+#corpoo #menu_container #menu {
+	position: relative;
+	display: inline-block;
+}
+#corpoo #menu_container #menu .menu {
+	float: left;
+	margin: 5px 25px 0px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: A_little_sunshine, Arial;
+	cursor: pointer;
+}
+.janelas {
+	display: none;
+	position: relative;
+	color: #FFFFFF;
+	width: 50%;
+	margin: 0 auto;
+}
+#j_contatos .title {
+	font-weight: bold;
+}
+#j_contatos a, #j_contatos a:visited {
+	color: #FFFFFF;
+}
+#j_contatos div {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+#j_contatos .legend {
+	margin: 0px;
+	line-height: 22px;
+	width: 70px;
+}
+#j_contatos .legend, #j_contatos input, #j_contatos textarea {
+	float: left;
+}
+#j_contatos input, #j_contatos textarea {
+	width: 99%;
+	padding: 0px;
+}
+#j_contatos textarea {
+	resize: none;
+	height: 80px;
+}
+#j_contatos button {
+	position: absolute;
+	right: 0px;
+}
+#j_contatos .saida {
+	font-weight: bold;
+}
+#j_projetos #menu_projetos .title {
+	font-weight: bold;
+}
+#j_projetos #menu_projetos .menu {
+	width: 160px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	font-weight: bold;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+	margin: 0px 5px 5px 0px;
+}
+#j_projetos #menu_projetos .menu img {
+	width: 100%;
+	height: 90px;
+}
+#j_projetos #menu_projetos .menu p {
+	margin: 0px;
+}
+#album {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.5);
+	display: none;
+}
+#album #desk {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	background-color: #FFFFFF;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0px 0px 20px #000000;
+	border-radius: 5px;
+	padding: 5px;
+}
+#album #desk #fotoGrande {
+	position: relative;
+	width: 100%;
+	height: 85%;
+}
+#album #desk #fotoGrande #img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	background: rgba(0,0,0,0.05);
+}
+#album #desk #fotoGrande #img img {
+	max-width: 100%;
+	max-height: 100%;
+}
+#album #desk #fotoGrande #anterior, #album #desk #fotoGrande #proxima {
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.3);
+	width: 30px;
+	height: 100%;
+	font-size: 25px;
+	color: #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+}
+#album #desk #fotoGrande #anterior:hover, #album #desk #fotoGrande #proxima:hover {
+	opacity: 0.8;
+}
+#album #desk #fotoGrande #anterior p, #album #desk #fotoGrande #proxima p {
+	margin: 0;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#album #desk #fotoGrande #anterior {
+	left: 0px;
+}
+#album #desk #fotoGrande #proxima {
+	right: 0px;
+}
+#album #desk #fotoGrande #descricao {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+#album #desk #fotoGrande #descricao p {
+	margin: 5px 40px;
+	text-align: center;
+	text-shadow: 0px 0px 5px #000000;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 12px;
+}
+#album #desk #fotosPequenas {
+	position: relative;
+	width: 100%;
+	height: 15%;
+	white-space: nowrap;
+	overflow: auto;
+}
+#album #desk #fotosPequenas img {
+	position: relative;
+	max-width: 80%;
+	max-height: 80%;
+	margin: 7px 2px 0px 0px;
+	border: 2px solid #6b6b6b;
+	cursor: pointer;
+}
+#album #desk #fotosPequenas img:hover {
+	border: 2px solid #598ba9;
+	opacity: 0.7;
+}
+#album #desk #fechar {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 24px;
+	height: 24px;
+	background-color: #FFFFFF;
+	border-radius: 12px;
+	text-align: center;
+	box-shadow: 0px 0px 20px #000000;
+	cursor: pointer;
+}
+#album #desk #fechar:hover {
+	background-color: #dcdcdc;
+}
+#album #desk p {
+	margin: 0px;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 25px;
+}
+#j_experiencia {
+	font-family: Verdana;
+	text-shadow: 0px 0px 10px #000000;
+}
+#j_experiencia p {
+	margin: 0px 0px -10px 20px;
+}
+#j_experiencia .titulo {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 15px 0px -10px 0px;
+}
+@media screen and (max-width: 375px) {
+#corpoo #logo {
+	width: 30px;
+	margin-left: -15px;
+}
+#container {
+	width: 100%;
+}
+#corpoo #titulo {
+	margin-top: 60px;
+	font-size: 40px;
+}
+#corpoo #subtitulo {
+	margin-top: -40px;
+	font-size: 24px;
+}
+#corpoo .descricao {
+	margin-top: -10px;
+	width: 90%;
+	font-size: 13px;
+}
+#corpoo #foto {
+	margin-top: 10px;
+}
+#corpoo #social_container #social div {
+	margin: 0px 10px;
+}
+hr {
+	width: 70%;
+}
+#corpoo #menu_container #menu .menu {
+	float: none;
+	margin: 0px 20px 5px;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: A_little_sunshine, Arial;
+	cursor: pointer;
+}
+}
+/*final estilo portfolio*/
+#corpo {
+		position: relative;
+		max-width: 1000px;
+		margin: 0 auto;
+		border-left: 1px solid #DCDCDC;
+		border-right: 1px solid #DCDCDC;
+		background: #fafafa;
+		height: auto;
+		min-height: 100%;
+}
+#header {
+		position: relative;
+		height: 100px;
+		margin-left: 5%;
+		margin-right: 5%;
+}
+#header #headerLeft {
+		float: left;
+}
+#header #headerRight {
+		float: right;
+}
+#header #headerRight #menu {
+	position: absolute;
+    bottom: 20px;
+    right: 0px;
+}
+#header #headerRight #menu a {
+	text-decoration: none;
+	color: #000000;
+}
+#header #headerRight #menu a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+#header #img_logo {
+		width: 220px;
+		height: 75px;
+		overflow:hidden;
+}
+#header #sub_logo {
+		display: block;
+		width: 214px;
+		position: relative;
+		margin-top: -13px;
+		text-align: right;
+		font-size: 10px;
+		font-weight: bold;
+		color: #777777;
+}
+#social_bar {
+		position: relative;
+		float: right;
+}
+#show_case, #bread_crumbs, #call_to_action, #front_page_top, #front_page_bottom, #front_top, #front_bottom , #footer, #footer_inset {
+		position: relative;
+		width: 100%;
+		float: left;
+		text-align: center;
+}
+#show_case {
+		height: 300px;
+		overflow: hidden;
+}
+#front_page_top1, #front_page_top2, #front_page_top3, #front_page_top4, #front_page_bottom1, #front_page_bottom2, #front_page_bottom3, #front_page_bottom4, #footer1, #footer2, #footer3, #footer4 {
+		position: relative;
+		display: inline-block;
+		*display: inline;*zoom: 1;
+		margin: 0 5px 0 5px;
+}
+#content {
+		position: relative;
+		width: 100%;
+		float: left;
+}
+#content .content {
+		position: relative;
+		display: inline-block;
+		*display: inline;*zoom: 1;
+		margin: 0 5px 0 5px;
+}
+#sidebar_right {
+		float: right;
+}
+#copyright, .copyright {
+		width: 100%;
+		height: 20px;
+		float: left;
+		text-align: center;
+		bottom: 0px;
+}
+#copyright {
+		position: absolute;
+		/* não alterar */
+}
+.copyright {
+		position: relative;
+		background: none;
+		/* não alterar */
+}
+#show_case img {
+		position: relative;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+}
